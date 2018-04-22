@@ -55,6 +55,14 @@ button img, span.badge img {
 	max-width: 8em;
 }
 
+footer figure img {
+	width: 3em;
+}
+
+div div figure img {
+	width: 15em;
+}
+
 div.card-body.text-nowrap {
 	overflow: auto;
 }

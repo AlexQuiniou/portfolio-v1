@@ -1,0 +1,2365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Alex Qui ?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"> -->
+
+</head>
+
+<body>
+
+
+    <div class="alert alert-warning alert-dismissible fade show m-0" role="alert">
+        <h4>Holy guacamole!</h4>
+        Le site ne fonctionne pas correctement sous <u>Chrome</u> et <u>Internet explorer</u>. Veuillez utiliser
+        <a href="https://www.mozilla.org" class="alert-link" target="_blank">Firefox</a> ou
+        <a href="https://www.microsoft.com/fr-fr/windows/microsoft-edge" class="alert-link" target="_blank">Edge</a>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-white">
+        <button class="navbar-toggler border rounded border-dark bg-white text-dark m-4" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+            aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon d-flex justify-content-center">
+                <i class="material-icons d-flex align-items-center ">dehaze</i>
+            </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+            <ul class="nav nav-pills justify-content-center w-75 mx-auto sticky-top bg-white rounded" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active border rounded border-dark bg-white text-dark mx-4 my-2" id="pills-home-tab" data-toggle="pill"
+                        href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle border rounded border-dark bg-white text-dark mx-4 my-2" data-toggle="dropdown" href="#"
+                        role="button" aria-haspopup="true" aria-expanded="false">Travaux</a>
+                    <div class="dropdown-menu rounded border-dark bg-white text-dark">
+                        <a class="dropdown-item" id="pills-logo-tab" data-toggle="pill" href="#pills-logo" role="tab" aria-controls="pills-logo"
+                            aria-selected="false">Logo</a>
+                        <a class="dropdown-item" id="pills-3d-tab" data-toggle="pill" href="#pills-3d" role="tab" aria-controls="pills-3d" aria-selected="false">3D</a>
+                        <a class="dropdown-item" id="pills-photo-tab" data-toggle="pill" href="#pills-photo" role="tab" aria-controls="pills-photo"
+                            aria-selected="false">Photo</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link border rounded border-dark bg-white text-dark mx-4 my-2" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                        role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- <ul class="nav nav-pills justify-content-center w-75 mx-auto m-4 sticky-top bg-white rounded" id="pills-tab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active border rounded border-dark bg-white text-dark m-4" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                role="tab" aria-controls="pills-home" aria-selected="true">Accueil</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle border rounded border-dark bg-white text-dark m-4" data-toggle="dropdown" href="#" role="button"
+                aria-haspopup="true" aria-expanded="false">Travaux</a>
+            <div class="dropdown-menu rounded border-dark bg-white text-dark">
+                <a class="dropdown-item" id="pills-logo-tab" data-toggle="pill" href="#pills-logo" role="tab" aria-controls="pills-logo"
+                    aria-selected="false">Logo</a>
+                <a class="dropdown-item" id="pills-3d-tab" data-toggle="pill" href="#pills-3d" role="tab" aria-controls="pills-3d" aria-selected="false">3D</a>
+                <a class="dropdown-item" id="pills-photo-tab" data-toggle="pill" href="#pills-photo" role="tab" aria-controls="pills-photo"
+                    aria-selected="false">Photo</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link border rounded border-dark bg-white text-dark m-4" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+        </li>
+    </ul> -->
+
+    <div class="tab-content w-75 mx-auto" id="pills-tabContent">
+        <div class="tab-pane fade show active m-4" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <figure class="figure d-block mx-auto row">
+                <img class="figure-img img-fluid rounded border border-dark p-1 d-block mx-auto col-md-3" src="media\DSCPDC_0001_BURST20180421192421439_COVER2.jpg"
+                    alt="">
+                <figcaption class="figure-caption text-center d-block mx-auto col-md-3">
+                    <small>
+                        <em>Et comme vous pouvez le constater la personne qui est au dessus n'est autre que moi</em>
+                        😏</small>
+                </figcaption>
+            </figure>
+
+            <div class="row d-block">
+                <h1 class="text-center d-block mx-auto col-md-8">1m75 de créativité</h1>
+                <p class="text-center d-block mx-auto col-md-8">Un concentré de curiosité, bonne humeur, voyages, experiences, multidisciplinaire et avec une pointe d'humour.
+                    <small>
+                        <em>C'est la cerise sur le gateau</em> 😁
+                    </small>
+                </p>
+                <p class="text-center d-block mx-auto col-md-8">Faites le tour du site et n'hesitez pas à me
+                    <strong>
+                        contacter
+                    </strong>
+                    en cas de besoin
+                    <small>
+                        <em>Le gros bouton en haut à droite</em> ☝️
+                    </small>
+                </p>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="pills-logo" role="tabpanel" aria-labelledby="pills-logo-tab">
+
+            <!-- utilises -->
+
+            <div>
+
+                <div class="d-flex justify-content-center p-3 m-0">
+                    <h1 class="m-0">Logo
+                    </h1>
+                    <div>
+                        <span class="badge badge-light">Utilisés</span>
+                    </div>
+                </div>
+
+                <div class="card-body mb-3 text-nowrap">
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#alex">
+                        <img class="" src="media\logo\utilises\LOGO - ALEX QUINIOU_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="alex" tabindex="-1" role="dialog" aria-labelledby="alexTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\logo\utilises\LOGO - ALEX QUINIOU_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#astucemanv4">
+                        <img class="img-responsive" src="media\logo\utilises\LOGO - ASTUCEMAN V4_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="astucemanv4" tabindex="-1" role="dialog" aria-labelledby="astucemanv4Title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\logo\utilises\LOGO - ASTUCEMAN V4_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#astucemanv5">
+                        <img class="img-responsive" src="media\logo\utilises\LOGO - ASTUCEMAN V5_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="astucemanv5" tabindex="-1" role="dialog" aria-labelledby="astucemanv5Title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\logo\utilises\LOGO - ASTUCEMAN V5_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#astucemanv6">
+                        <img class="img-responsive" src="media\logo\utilises\LOGO - ASTUCEMAN V6_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="astucemanv6" tabindex="-1" role="dialog" aria-labelledby="astucemanv6Title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\logo\utilises\LOGO - ASTUCEMAN V6_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#astucemanv7">
+                        <img class="img-responsive" src="media\logo\utilises\LOGO - ASTUCEMAN V7_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="astucemanv7" tabindex="-1" role="dialog" aria-labelledby="astucemanv7Title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\logo\utilises\LOGO - ASTUCEMAN V7_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#astucemanv8">
+                        <img class="img-responsive" src="media\logo\utilises\LOGO - ASTUCEMAN V8_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="astucemanv8" tabindex="-1" role="dialog" aria-labelledby="astucemanv8Title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\logo\utilises\LOGO - ASTUCEMAN V8_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#heartmana">
+                        <img class="img-responsive" src="media\logo\utilises\LOGO - HEART-MANA_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="heartmana" tabindex="-1" role="dialog" aria-labelledby="heartmanaTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\logo\utilises\LOGO - HEART-MANA_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#musictimev7">
+                        <img class="img-responsive" src="media\logo\utilises\LOGO - MUSIC TIME V7_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="musictimev7" tabindex="-1" role="dialog" aria-labelledby="musictimev7Title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\logo\utilises\LOGO - MUSIC TIME V7_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#musictime">
+                        <img class="img-responsive" src="media\logo\utilises\LOGO - MUSIC TIME_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="musictime" tabindex="-1" role="dialog" aria-labelledby="musictimeTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\logo\utilises\LOGO - MUSIC TIME_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#studiness">
+                        <img class="img-responsive" src="media\logo\utilises\LOGO - STUDINESS SQUARE_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="studiness" tabindex="-1" role="dialog" aria-labelledby="studinessTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\logo\utilises\LOGO - STUDINESS SQUARE_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- concept -->
+
+            <div>
+
+                <div class="d-flex justify-content-center p-3 m-0">
+                    <h1 class="m-0">Logo
+                    </h1>
+                    <div>
+                        <span class="badge badge-light">Concept</span>
+                    </div>
+                </div>
+
+
+                <div class="card-body mb-3 text-nowrap p-0">
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#flammes">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - 4 FLAMMES_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="flammes" tabindex="-1" role="dialog" aria-labelledby="flammesTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - 4 FLAMMES_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#centimes">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - 20CENTIMES_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="centimes" tabindex="-1" role="dialog" aria-labelledby="centimesTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - 20CENTIMES_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#allegro">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - ALLEGRO_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="allegro" tabindex="-1" role="dialog" aria-labelledby="allegroTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - ALLEGRO_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#annarchik">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - ANNAR'CHIK_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="annarchik" tabindex="-1" role="dialog" aria-labelledby="annarchikTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - ANNAR'CHIK_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#arche">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - ARCHE_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="arche" tabindex="-1" role="dialog" aria-labelledby="archeTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - ARCHE_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#assurance">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - ASSURANCE VITALE_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="assurance" tabindex="-1" role="dialog" aria-labelledby="assuranceTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - ASSURANCE VITALE_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#bagel">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - BAGEL STAR_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="bagel" tabindex="-1" role="dialog" aria-labelledby="bagelTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - BAGEL STAR_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#barnet">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - BARNET_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="barnet" tabindex="-1" role="dialog" aria-labelledby="barnetTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - BARNET_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#billard">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - BILLARD_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="billard" tabindex="-1" role="dialog" aria-labelledby="billardTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - BILLARD_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#blurred">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - BLURRED YELLOW LINES_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="blurred" tabindex="-1" role="dialog" aria-labelledby="blurredTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - BLURRED YELLOW LINES_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#cameo">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - CAMEO_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="cameo" tabindex="-1" role="dialog" aria-labelledby="cameoTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - CAMEO_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#comme">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - COMME UNE EVIDENCE_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="comme" tabindex="-1" role="dialog" aria-labelledby="commeTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - COMME UNE EVIDENCE_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#dreamlight">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - DREAMLIGHT_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="dreamlight" tabindex="-1" role="dialog" aria-labelledby="dreamlightTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - DREAMLIGHT_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#eveneight">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - EVENEIGHT_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="eveneight" tabindex="-1" role="dialog" aria-labelledby="eveneightTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - EVENEIGHT_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#finegood">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - FINEGOOD_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="finegood" tabindex="-1" role="dialog" aria-labelledby="finegoodTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - FINEGOOD_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#hospital">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - HOSPITAL_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="hospital" tabindex="-1" role="dialog" aria-labelledby="hospitalTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - HOSPITAL_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#idisplay">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - I-DISPLAY_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="idisplay" tabindex="-1" role="dialog" aria-labelledby="idisplayTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - I-DISPLAY_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#isepha">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - ISEPHA_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="isepha" tabindex="-1" role="dialog" aria-labelledby="isephaTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - ISEPHA_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#lanuitdunanard">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - LA NUIT DU NANAR_COULEUR.png.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="lanuitdunanard" tabindex="-1" role="dialog" aria-labelledby="lanuitdunanardTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - LA NUIT DU NANAR_COULEUR.png.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#letoo2">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - LETO O2_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="letoo2" tabindex="-1" role="dialog" aria-labelledby="letoo2Title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - LETO O2_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#letoo3">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - LETO O3_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="letoo3" tabindex="-1" role="dialog" aria-labelledby="letoo3Title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - LETO O3_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#letoo4">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - LETO O4_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="letoo4" tabindex="-1" role="dialog" aria-labelledby="letoo4Title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - LETO O4_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#letoo5">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - LETO O5_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="letoo5" tabindex="-1" role="dialog" aria-labelledby="letoo5Title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - LETO O5_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#leto">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - LETO_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="leto" tabindex="-1" role="dialog" aria-labelledby="letoTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - LETO_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#looping">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - LOOPING SOCIETY_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="looping" tabindex="-1" role="dialog" aria-labelledby="loopingTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - LOOPING SOCIETY_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#lullabyo2">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - LULLABY_COULEUR 2.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="lullabyo2" tabindex="-1" role="dialog" aria-labelledby="lullabyo2Title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - LULLABY_COULEUR 2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#lullabyo3">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - LULLABY_COULEUR 3.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="lullabyo3" tabindex="-1" role="dialog" aria-labelledby="lullabyo3Title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - LULLABY_COULEUR 3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#lullaby">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - LULLABY_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="lullaby" tabindex="-1" role="dialog" aria-labelledby="lullabyTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - LULLABY_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#mano">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - MANO NEGRA_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="mano" tabindex="-1" role="dialog" aria-labelledby="manoTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - MANO NEGRA_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#maze">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - MAZE GRAPHIX_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="maze" tabindex="-1" role="dialog" aria-labelledby="mazeTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - MAZE GRAPHIX_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#meta">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - META_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="meta" tabindex="-1" role="dialog" aria-labelledby="metaTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - META_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#novae">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - NOVAE_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="novae" tabindex="-1" role="dialog" aria-labelledby="novaeTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - NOVAE_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#ofly">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - O.FLY COMPANY_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="ofly" tabindex="-1" role="dialog" aria-labelledby="oflyTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - O.FLY COMPANY_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#orter">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - ORTER_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="orter" tabindex="-1" role="dialog" aria-labelledby="orterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - ORTER_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#patriot">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - PATRIOT FLY_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="patriot" tabindex="-1" role="dialog" aria-labelledby="patriotTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - PATRIOT FLY_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#quadrature">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - QUADRATURE_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="quadrature" tabindex="-1" role="dialog" aria-labelledby="quadratureTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - QUADRATURE_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#rock">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - ROCK N'FEST_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="rock" tabindex="-1" role="dialog" aria-labelledby="rockTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - ROCK N'FEST_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#salve">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - SALVE_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="salve" tabindex="-1" role="dialog" aria-labelledby="salveTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - SALVE_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#solarius">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - SOLARIUS_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="solarius" tabindex="-1" role="dialog" aria-labelledby="solariusTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - SOLARIUS_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#status">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - STATUS_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="status" tabindex="-1" role="dialog" aria-labelledby="statusTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - STATUS_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#twelvematics">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - TWELVEMATICS_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="twelvematics" tabindex="-1" role="dialog" aria-labelledby="twelvematicsTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - TWELVEMATICS_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#vyf">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - VYF_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="vyf" tabindex="-1" role="dialog" aria-labelledby="vyfTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - VYF_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#water">
+                        <img class="img-responsive" src="media\logo\concept\LOGO - WATER GUARD_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="water" tabindex="-1" role="dialog" aria-labelledby="waterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\concept\LOGO - WATER GUARD_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- icones -->
+
+            <div>
+
+                <div class="d-flex justify-content-center p-3 m-0">
+                    <h1 class="m-0">Logo
+                    </h1>
+                    <div>
+                        <span class="badge badge-light">Icones</span>
+                    </div>
+                </div>
+
+                <div class="card-body mb-3 text-nowrap p-0">
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#blackandwhite">
+                        <img class="img-responsive" src="media\logo\icones\LOGO - BLACK AND WHITE 2_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="blackandwhite" tabindex="-1" role="dialog" aria-labelledby="blackandwhiteTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\icones\LOGO - BLACK AND WHITE 2_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#blur">
+                        <img class="img-responsive" src="media\logo\icones\LOGO - BLUR_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="blur" tabindex="-1" role="dialog" aria-labelledby="blurTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\icones\LOGO - BLUR_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#commandos">
+                        <img class="img-responsive" src="media\logo\icones\LOGO - COMMANDOS STRIKE FORCE_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="commandos" tabindex="-1" role="dialog" aria-labelledby="commandosTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\icones\LOGO - COMMANDOS STRIKE FORCE_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#fear">
+                        <img class="img-responsive" src="media\logo\icones\LOGO - FEAR_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="fear" tabindex="-1" role="dialog" aria-labelledby="fearTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\icones\LOGO - FEAR_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#flamme">
+                        <img class="img-responsive" src="media\logo\icones\LOGO - FLAMME_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="flamme" tabindex="-1" role="dialog" aria-labelledby="flammeTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\icones\LOGO - FLAMME_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#mosquito">
+                        <img class="img-responsive" src="media\logo\icones\LOGO - MOSQUITO_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="mosquito" tabindex="-1" role="dialog" aria-labelledby="mosquitoTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\icones\LOGO - MOSQUITO_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#circuitv2">
+                        <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - CIRCUIT V2_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="circuitv2" tabindex="-1" role="dialog" aria-labelledby="circuitv2Title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - CIRCUIT V2_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#circuit">
+                        <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - CIRCUIT_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="circuit" tabindex="-1" role="dialog" aria-labelledby="circuitTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - CIRCUIT_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#dragv2">
+                        <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - DRAG V2_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="dragv2" tabindex="-1" role="dialog" aria-labelledby="dragv2Title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - DRAG V2_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#drag">
+                        <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - DRAG_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="drag" tabindex="-1" role="dialog" aria-labelledby="dragTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - DRAG_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#driftv2">
+                        <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - DRIFT V2_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="driftv2" tabindex="-1" role="dialog" aria-labelledby="driftv2Title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - DRIFT V2_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#drift">
+                        <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - DRIFT_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="drift" tabindex="-1" role="dialog" aria-labelledby="driftTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - DRIFT_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#sprintv2">
+                        <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - SPRINT V2_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="sprintv2" tabindex="-1" role="dialog" aria-labelledby="sprintv2Title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - SPRINT V2_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#                        <!-- Modal -->">
+                        <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - SPRINT_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="sprintv2" tabindex="-1" role="dialog" aria-labelledby="sprintv2Title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - SPRINT_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#streetxv2">
+                        <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - STREET X V2_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="streetxv2" tabindex="-1" role="dialog" aria-labelledby="streetxv2Title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - STREET X V2_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#streetx">
+                        <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - STREET X_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="streetx" tabindex="-1" role="dialog" aria-labelledby="streetxTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - STREET X_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#urlv2">
+                        <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - UNDERGROUND RACING LEAGUE V2_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="urlv2" tabindex="-1" role="dialog" aria-labelledby="urlv2Title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - UNDERGROUND RACING LEAGUE V2_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#url">
+                        <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - UNDERGROUND RACING LEAGUE_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="url" tabindex="-1" role="dialog" aria-labelledby="urlTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\icones\LOGO - NEED FOR SPEED - UNDERGROUND RACING LEAGUE_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#medal1">
+                        <img class="img-responsive" src="media\logo\icones\LOGO - QUAKE 3 - MEDAL 1_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="medal1" tabindex="-1" role="dialog" aria-labelledby="medal1Title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\icones\LOGO - QUAKE 3 - MEDAL 1_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#medal2">
+                        <img class="img-responsive" src="media\logo\icones\LOGO - QUAKE 3 - MEDAL 2_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="medal2" tabindex="-1" role="dialog" aria-labelledby="medal2Title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\icones\LOGO - QUAKE 3 - MEDAL 2_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#ulysse31">
+                        <img class="img-responsive" src="media\logo\icones\LOGO - ULYSSE 31_COULEUR.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="ulysse31" tabindex="-1" role="dialog" aria-labelledby="ulysse31Title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-responsive" src="media\logo\icones\LOGO - ULYSSE 31_COULEUR.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="tab-pane fade" id="pills-3d" role="tabpanel" aria-labelledby="pills-3d-tab">
+
+            <!-- abstrait -->
+
+            <div>
+
+                <div class="d-flex justify-content-center p-3 m-0">
+                    <h1 class="m-0">3D
+                    </h1>
+                    <div>
+                        <span class="badge badge-light">Abstrait</span>
+                    </div>
+                </div>
+
+                <div class="card-body mb-3 text-nowrap">
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#bigblue">
+                        <img class="" src="media\3d\abstrait\Big blue.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="bigblue" tabindex="-1" role="dialog" aria-labelledby="bigblueTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\abstrait\Big blue.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#bug">
+                        <img class="" src="media\3d\abstrait\Bug.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="bug" tabindex="-1" role="dialog" aria-labelledby="bugTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\abstrait\Bug.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#goldvalley">
+                        <img class="" src="media\3d\abstrait\Gold valley.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="goldvalley" tabindex="-1" role="dialog" aria-labelledby="goldvalleyTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\abstrait\Gold valley.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#hellsdreams">
+                        <img class="" src="media\3d\abstrait\Hell's dreams.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="hellsdreams" tabindex="-1" role="dialog" aria-labelledby="hellsdreamsTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\abstrait\Hell's dreams.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#masterlight">
+                        <img class="" src="media\3d\abstrait\Master light.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="masterlight" tabindex="-1" role="dialog" aria-labelledby="masterlightTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\abstrait\Master light.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#reunion">
+                        <img class="" src="media\3d\abstrait\Reunion.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="reunion" tabindex="-1" role="dialog" aria-labelledby="reunionTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\abstrait\Reunion.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#triangles">
+                        <img class="" src="media\3d\abstrait\Triangles.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="triangles" tabindex="-1" role="dialog" aria-labelledby="trianglesTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\abstrait\Triangles.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- personnage -->
+
+            <div>
+
+                <div class="d-flex justify-content-center p-3 m-0">
+                    <h1 class="m-0">3D
+                    </h1>
+                    <div>
+                        <span class="badge badge-light">Personnage</span>
+                    </div>
+                </div>
+
+                <div class="card-body mb-3 text-nowrap">
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#alone">
+                        <img class="" src="media\3d\personnage\Alone.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="alone" tabindex="-1" role="dialog" aria-labelledby="aloneTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\personnage\Alone.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#angelita">
+                        <img class="" src="media\3d\personnage\Angelita.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="angelita" tabindex="-1" role="dialog" aria-labelledby="angelitaTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\personnage\Angelita.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#black">
+                        <img class="" src="media\3d\personnage\Black.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="black" tabindex="-1" role="dialog" aria-labelledby="blackTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\personnage\Black.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#cafeaulait">
+                        <img class="" src="media\3d\personnage\Cafe au lait.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="cafeaulait" tabindex="-1" role="dialog" aria-labelledby="cafeaulaitTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\personnage\Cafe au lait.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#close">
+                        <img class="" src="media\3d\personnage\Close.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="close" tabindex="-1" role="dialog" aria-labelledby="closeTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\personnage\Close.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#coquette">
+                        <img class="" src="media\3d\personnage\Coquette.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="coquette" tabindex="-1" role="dialog" aria-labelledby="coquetteTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\personnage\Coquette.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#dead">
+                        <img class="" src="media\3d\personnage\Dead.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="dead" tabindex="-1" role="dialog" aria-labelledby="deadTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\personnage\Dead.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#devilweding">
+                        <img class="" src="media\3d\personnage\Devil weding.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="devilweding" tabindex="-1" role="dialog" aria-labelledby="devilwedingTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\personnage\Devil weding.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#easylove">
+                        <img class="" src="media\3d\personnage\Easy love.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="easylove" tabindex="-1" role="dialog" aria-labelledby="easyloveTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\personnage\Easy love.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#power">
+                        <img class="" src="media\3d\personnage\Power.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="power" tabindex="-1" role="dialog" aria-labelledby="powerTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\personnage\Power.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#rainbow">
+                        <img class="" src="media\3d\personnage\Rainbow.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="rainbow" tabindex="-1" role="dialog" aria-labelledby="rainbowTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\personnage\Rainbow.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#succube">
+                        <img class="" src="media\3d\personnage\Succube au petit matin lilith 6 v2.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="succube" tabindex="-1" role="dialog" aria-labelledby="succubeTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\personnage\Succube au petit matin lilith 6 v2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#tess">
+                        <img class="" src="media\3d\personnage\Tess.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="tess" tabindex="-1" role="dialog" aria-labelledby="tessTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\personnage\Tess.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- autre -->
+
+            <div>
+
+                <div class="d-flex justify-content-center p-3 m-0">
+                    <h1 class="m-0">3D
+                    </h1>
+                    <div>
+                        <span class="badge badge-light">Autre</span>
+                    </div>
+                </div>
+
+                <div class="card-body mb-3 text-nowrap">
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#chevrolet">
+                        <img class="" src="media\3d\autre\Chevrolet camaro.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="chevrolet" tabindex="-1" role="dialog" aria-labelledby="chevroletTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\autre\Chevrolet camaro.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#danger">
+                        <img class="" src="media\3d\autre\Danger.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="danger" tabindex="-1" role="dialog" aria-labelledby="dangerTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\autre\Danger.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#fireone">
+                        <img class="" src="media\3d\autre\FireOne.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="fireone" tabindex="-1" role="dialog" aria-labelledby="fireoneTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\autre\FireOne.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#hh7">
+                        <img class="" src="media\3d\autre\Hh7 heel.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="hh7" tabindex="-1" role="dialog" aria-labelledby="hh7Title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\autre\Hh7 heel.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#horrorday">
+                        <img class="" src="media\3d\autre\Horror day.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="horrorday" tabindex="-1" role="dialog" aria-labelledby="horrordayTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\autre\Horror day.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#lamborghini">
+                        <img class="" src="media\3d\autre\Lamborghini (close).png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="lamborghini" tabindex="-1" role="dialog" aria-labelledby="lamborghiniTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\autre\Lamborghini (close).png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#paradise">
+                        <img class="" src="media\3d\autre\Paradise.png" alt="">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="paradise" tabindex="-1" role="dialog" aria-labelledby="paradiseTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered d-flex justify-content-center" role="document">
+                            <div class="modal-content border-0 w-75 h-75">
+                                <div class="modal-header border-0 d-flex justify-content-center">
+                                    <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center bg-white rounded-bottom">
+                                    <img class="img-fluid" src="media\3d\autre\Paradise.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="tab-pane fade" id="pills-photo" role="tabpanel" aria-labelledby="pills-photo-tab">Photo</div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">trois</div>
+    </div>
+
+</body>
+
+</html>

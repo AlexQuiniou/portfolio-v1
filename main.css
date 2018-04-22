@@ -1,0 +1,82 @@
+/* https://codepen.io/P1N2O/pen/pyBNzX */
+/* --- */
+
+/* .ziz {
+	animation: Gradient 5s ease;
+}
+
+@keyframes Gradient {
+	0% {
+		width: 100%;
+		height: 100%;
+		color: rgb(153, 37, 37);
+		background: linear-gradient(-45deg, rgb(255, 220, 210), rgb(255, 213, 229), rgb(202, 241, 255), rgb(205, 255, 243));
+		background-size: 400% 400%;	
+		background-position: 0% 50%;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		z-index: 2000;
+		display: block;
+
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+		background-color: white;
+	}
+} */
+
+/* --- */
+
+body {
+	animation-name: fondu;
+	animation-duration: 2s;
+}
+
+@keyframes fondu {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+html,body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+button img, span.badge img {
+	max-width: 8em;
+}
+
+div.card-body.text-nowrap {
+	overflow: auto;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+	color: white !important;
+	background-color: black !important;
+}
+
+/* body {
+	animation-name: body;
+	animation-duration: 2s;
+	opacity: 100%;
+}
+
+@keyframes body {
+	from {
+		opacity: 0;
+		background-color: aquamarine;
+	}
+	to {
+		opacity: 1;
+		background-color: blue;
+	}
+} */

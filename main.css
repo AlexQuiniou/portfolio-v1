@@ -68,8 +68,15 @@ div.card-body.text-nowrap {
 }
 
 .dropdown-item.active, .dropdown-item:active {
-	color: white !important;
-	background-color: black !important;
+	background-color: #343a40 !important;
+}
+
+embed {
+	height: 30em;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	background-color: #343a40 !important;
 }
 
 /* body {

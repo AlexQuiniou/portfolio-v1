@@ -79,6 +79,10 @@ embed {
 	background-color: #343a40 !important;
 }
 
+div#pills-tabContent,footer {
+	max-width: 50em;
+}
+
 /* body {
 	animation-name: body;
 	animation-duration: 2s;

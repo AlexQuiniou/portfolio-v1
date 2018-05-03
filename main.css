@@ -55,8 +55,12 @@ button img, span.badge img {
 	max-width: 8em;
 }
 
-footer figure img {
+footer figure img, #pills-maitrise figure img {
 	width: 3em;
+}
+
+#pills-maitrise figure img {
+	padding: 0 !important;
 }
 
 div div figure img {
